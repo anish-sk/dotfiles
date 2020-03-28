@@ -1,0 +1,60 @@
+{
+	"name": "riscv",
+	"displayName": "RISC-V Support",
+	"description": "Provides syntax highlighting and snippets for RISC-V assembly language",
+	"version": "0.0.6",
+	"publisher": "zhwu95",
+	"homepage": "https://github.com/zhuanhao-wu/vscode-riscv-support",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zhuanhao-wu/vscode-riscv-support"
+	},
+	"bugs": {
+		"url": "https://github.com/zhuanhao-wu/vscode-riscv-support/issues",
+		"email": "zhwu95@gmail.com"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "riscv",
+				"aliases": [
+					"RISC-V Assembly",
+					"riscv"
+				],
+				"extensions": [
+					".S",
+					".s",
+					".riscv",
+					".asm"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "riscv",
+				"scopeName": "source.riscv",
+				"path": "./syntaxes/riscv.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "riscv",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5a88eb5b-7bae-4b46-bd7d-b18778b5ed36",
+		"publisherId": "ee77ca2a-e823-47b9-bc90-719958837d04",
+		"publisherDisplayName": "zhwu95"
+	}
+}
